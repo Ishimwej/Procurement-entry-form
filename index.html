@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="karibu.css" />
+</head>
+
+<body>
+ 
+
+
+  <form action="index.html" method="post">
+    
+    <h2>PROCUREMENT ENTRY FORM</h2>
+    <fieldset>
+      <legend>SUPPLIER DETAILS</legend>
+
+      <div class="g1">
+        <div>
+          <label>Supplier Name</label><br>
+          <input type="text" required /><br>
+        </div> <br> <br>
+
+        <div>
+          <label>Supplier Contact</label> <br>
+          <input type="tel" required />
+        </div>
+      </div>
+      <div class="g1">
+        <div> <label>Purchase Date</label> <br>
+          <input type="date" required /> <br>
+        </div> <br>
+
+
+        <div><label>Invoice Number</label><br>
+          <input type="number" required /> <br>
+        </div>
+      </div>
+    </fieldset>
+
+    <br><br>
+
+    <fieldset>
+      <legend>PRODUCT DETAILS</legend>
+      <div class="g1">
+        <div>
+          <label for="">Product Name</label><br>
+          <input type="text" required />
+        </div><br>
+
+        <div>
+          <label>Product Category</label> <br>
+          <select>
+            <i>
+              <option value="select category">..Select Category..</option>
+            </i><br />
+            <option value="Electonics">Electonics</option>
+            <option value="furniture">Furniture</option>
+            <option value="stationary">Stationary</option>
+            <option value="groceries">Groceries</option>
+          </select>
+        </div>
+      </div><br>
+
+      <div class="g1">
+        <div>
+          <label>Quantity Number</label> <br>
+          <input type="number" />
+        </div><br>
+
+        <div>
+          <label for="unit price">Unit Price</label> <br>
+          <input type="text">
+        </div>
+      </div><br>
+
+      <div class="g2">
+        <label for="total amount">Total Amount</label><br>
+        <input type="text" required>
+      </div>
+
+    </fieldset>
+    <!-- <label>PAYMENT METHOD</label>  -->
+    <br />
+    <fieldset>
+      <legend class="true"> PAYMENT METHOD</legend>
+      <input type="radio" id="cash" name="payment method" value="Cash">
+      <label>Cash</label> <br>
+      <input type="radio" id="Mobile money" name="payment method" value="Mobile money">
+      <label>Mobile Money</label><br>
+      <input type="radio" id="bank" name="payment method" value="Bank">
+      <label>Bank </label><br>
+      <input type="radio" id="credit" name="payment method" value="credit">
+      <label>Credit</label>
+    </fieldset>
+
+    <br>
+    <fieldset>
+      <legend class="true">PAYMENT STATUS</legend>
+      <input type="radio" id="cash" name="payment status" value="Cash">
+      <label>Cash</label> <br>
+      <input type="radio" id="Mobile Money" name="payment status" value="Mobile money">
+      <label>Mobile Money</label><br>
+      <input type="radio" id="Bank" name="payment status" value="Bank">
+      <label>Bank </label><br>
+      <input type="radio" id="Credit" name="payment status" value="credit">
+      <label>Credit</label> <br>
+      <input type="radio" id="Pending" name="payment status" value="Pending">
+      <label> Pending </label>
+    </fieldset>
+    <br /><br>
+   
+    <fieldset> 
+      <legend class="true">ADDITIONAL DETAILS</legend>
+
+  <label style="margin: top 5px;">Delivery Date</label> <br>
+  <input type="date" class="input-field"> <br> <br>
+
+  <div class="label">
+    <label>Notes/Description</label>
+  </div><br>
+
+  <textarea class="textarea-field"></textarea><br><br>
+
+  <label>Receipt Upload</label><br>
+  <input type="file" class="file-field"><br>
+
+<div class="button-row">
+  <button type="submit" class="btn submit-btn">Submit</button>
+  <button type="reset" class="btn reset-btn">Reset</button>
+</div>
+
+</form>
+</body>
+
+</html>
